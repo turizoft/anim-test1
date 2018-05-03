@@ -1,0 +1,131 @@
+---
+title: Test
+---
+<header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li class="active">John's Home</li>
+          <li>John's Places</li>
+          <li>John's Group Trips</li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="dot-menu">
+    <li>Nestor's Home</li>
+    <li>Nestor's Movies</li>
+    <li>Nestor's Group Movies</li>
+  </ul>
+</header>
+
+<div class="subheader">
+  <div class="container flex-columns">
+    <div class="profile-info">
+      <div class="profile-picture" style="background-image: url(<%= asset_url 'images/user1.jpeg' %>)"></div>
+      <h1 class="profile-name">John Doe Smith</h1>
+      <button class="btn main-btn">Follow</button>
+    </div>
+
+    <p class="profile-description">Cui Tubuli nomen odio non est? Sed quot homines, tot sententiae; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Inde igitur, inquit, ordiendum est. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant.</p>
+
+    <div class="profile-stats flex-columns">
+      <div class="profile-stat">
+        <h3>Followers</h3>
+        <p><%= rand(1..9999)%></p>
+      </div>
+      <div class="profile-stat">
+        <h3>Following</h3>
+        <p><%= rand(1..9999)%></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="profile-section" class="page-section active">
+  <div class="container flex-columns">
+      <div class="profile-places">
+        <div class="profile-place">
+          <div class="place-picture" style="background-image: url(<%= asset_url 'images/l1.jpeg' %>)"></div>
+          <div class="place-details">
+            <h2>Honululu</h2>
+            <b>Rating: 8.9</b>
+            <p>Cui Tubuli nomen odio non est? Sed quot homines, tot sententiae; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Inde igitur, inquit, ordiendum est. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant.</p>
+          </div>
+        </div>
+        <div class="profile-place">
+          <div class="place-picture" style="background-image: url(<%= asset_url 'images/l2.jpeg' %>)"></div>
+          <div class="place-details">
+            <h2>Santorini</h2>
+            <b>Rating: 7.8</b>
+            <p>Ergo id est convenienter naturae vivere, a natura discedere. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse.</p>
+          </div>
+        </div>
+        <div class="profile-place">
+          <div class="place-picture" style="background-image: url(<%= asset_url 'images/l3.jpeg' %>)"></div>
+          <div class="place-details">
+            <h2>Cusco</h2>
+            <b>Rating: 7.4</b>
+            <p>An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Duo Reges: constructio interrete. Longum est enim ad omnia respondere, quae a te dicta sunt. Istic sum, inquit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-locations">
+        <p>&#9733; Checked in at Barranquilla location</p>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Albany,+NY&zoom=13&scale=1&size=500x500&maptype=roadmap&format=png&visual_refresh=true" alt="Google Map of Albany, NY">
+        <img />
+      </div>
+    </div>
+  </section>
+
+<section id="places-section" class="page-section">
+  <div class="container">
+    <div class="place-details">
+      <h2>Nestor's Movies</h2>
+      <h1>Black Panther</h1>
+      <b>Rating: 7.8</b>
+      <img />
+      <p>Ergo id est convenienter naturae vivere, a natura discedere. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse.</p>
+    </div>
+
+    <div class="other-places">
+      <div class="place">
+        <img />
+        <div class="place-details">
+          <h2>Avengers: Infinity War</h2>
+          <b>Rating: 8.9</b>
+          <p>Cui Tubuli nomen odio non est? Sed quot homines, tot sententiae; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Inde igitur, inquit, ordiendum est. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant.</p>
+        </div>
+      </div>
+      <div class="place">
+        <img />
+        <div class="place-details">
+          <h2>Black Panther</h2>
+          <b>Rating: 7.8</b>
+          <p>Ergo id est convenienter naturae vivere, a natura discedere. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse.</p>
+        </div>
+      </div>
+      <div class="place">
+        <img />
+        <div class="place-details">
+          <h2>Spider-Man: Homecoming</h2>
+          <b>Rating: 7.4</b>
+          <p>An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Duo Reges: constructio interrete. Longum est enim ad omnia respondere, quae a te dicta sunt. Istic sum, inquit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="group-section" class="page-section">
+  <div class="container">
+    <div class="group-discussions">
+      <p>Cui Tubuli nomen odio non est? Sed quot homines, tot sententiae; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Inde igitur, inquit, ordiendum est. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. Quid ergo attinet gloriose loqui, nisi constanter loquare? Ergo id est convenienter naturae vivere, a natura discedere. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Cui Tubuli nomen odio non est? Sed quot homines.</p>
+</footer>
